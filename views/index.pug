@@ -5,14 +5,4 @@ block content
   p This is the updated Express app with Bootstrap integration.
   button(type="button", class="btn btn-primary") Sample Button
   button(type="button", class="btn btn-secondary") Press me
-  button(onclick="boost()") Sample Button
-  div#boost add in extra
-script.
-    let value = 0;
-    let amt = 3;
-
-    function boost() {
-        amt += 1;
-        value += amt;
-        document.getElementById("boost").innerText = `Boosted ${value} by ${amt}`;
-    }
+ 
