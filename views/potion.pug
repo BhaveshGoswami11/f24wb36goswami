@@ -1,0 +1,27 @@
+extends layout
+
+block content
+    h1 Search Results for Potion
+
+    section
+      h2 Potion Details
+      p Name: Potion of Healing
+      p Effect: Heals the user for 50 HP over 10 seconds
+      p Potency: 75
+
+    
+    section
+      h2 Available Potions
+      ul
+        li
+          a(href='#') Potion of Fire Resistance
+        li
+          a(href='#') Potion of Strength
+        li
+          a(href='#') Potion of Invisibility
+
+    
+    form(action="/search", method="get")
+      label(for="search") Search Potions:
+      input(type="text", name="search", id="search")
+      button(type="submit") Search
